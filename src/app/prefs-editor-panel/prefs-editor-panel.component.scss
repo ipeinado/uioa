@@ -1,0 +1,66 @@
+:host {
+    list-style-type: none;
+    border: 1px solid #615e59;
+    min-width: calc(100vw - 2px);
+    background-color: #fff;
+    white-space: normal;
+    display: table-cell;
+    padding: 16px .5rem;
+    font-family: 'OpenSans',"Myriad Pro",Helvetica,Arial,sans-serif;
+
+    @media screen and (min-width: 40em) {
+        padding: 1.5rem;
+        padding-top: 1rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px #7a766d;
+        min-width: 25rem;
+        margin-right: 1.5rem;
+    }
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 3.6rem;
+    text-transform: lowercase;
+    white-space: nowrap;
+    pointer-events: none;
+
+    .heading-text {
+        font-size: 1.3em;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 40em) {
+        justify-content: flex-start;
+        margin: 0 0 1.8rem 0;
+        border-bottom: solid #ccc 1px;
+        box-shadow: 0 6px 7px -6px rgba(0,0,0,0.3);
+        font-size: 1.2rem;
+        height: 3rem;
+        white-space: normal;
+    }
+}
+
+.prefsEditor-panel-descr {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    width: 1px;
+
+    @media screen and (min-width: 40em) {
+        height: auto;
+        margin: 0;
+        margin-bottom: 1rem;
+        overflow: visible;
+        position: inherit;
+        width: 100%;
+    }
+}

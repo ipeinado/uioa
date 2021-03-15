@@ -1,0 +1,39 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .switchUI-text {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .switchUI-control {
+        width: 5.4em;
+        border: .15em solid currentColor;
+        border-radius: 2em;
+        margin: 0 1em;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 0.2em #fff, 0 0 0 0.35em #000;
+        }
+
+        &[aria-checked="true"] {
+            justify-content: flex-end;
+        }
+    }
+
+    .switchUI-controlKnob {
+        height: 1.8em;
+        width: 1.8em;
+        background-color: currentColor;
+        border-radius: 1.8em;
+        display: inline-block;
+        margin: .2em;
+    }
+}
+

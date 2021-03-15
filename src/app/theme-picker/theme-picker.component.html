@@ -1,0 +1,39 @@
+<div class="fl-choices" role="radiogroup">
+    <div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="default" id="themeRow::themeInput" value="default" [attr.aria-checked]="theme === 'default' ? true : false" (click)="onInputClicked($event)">
+        <div class="fl-indicator"></div>
+        <label for="themeRow::themeInput" class="flc-prefsEditor-theme-label fl-prefsEditor-themePicker-defaultThemeLabel fl-theme-prefsEditor-default" id="themeRow::themeLabel" aria-label="Default"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Default</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="black on white" id="themeRow:1:themeInput" value="bw" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'bw' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:1:themeInput" class="flc-prefsEditor-theme-label fl-theme-bw" id="themeRow:1:themeLabel" aria-label="Black on white"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Black on white</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="white on black" id="themeRow:2:themeInput" value="wb" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'wb' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:2:themeInput" class="flc-prefsEditor-theme-label fl-theme-wb" id="themeRow:2:themeLabel" aria-label="White on black"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">White on black</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="black on yellow" id="themeRow:3:themeInput" value="by" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'by' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:3:themeInput" class="flc-prefsEditor-theme-label fl-theme-by" id="themeRow:3:themeLabel" aria-label="Black on yellow"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Black on yellow</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="yellow on black" id="themeRow:4:themeInput" value="yb" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'yb' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:4:themeInput" class="flc-prefsEditor-theme-label fl-theme-yb" id="themeRow:4:themeLabel" aria-label="Yellow on black"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Yellow on black</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="low" id="themeRow:5:themeInput" value="lgdg" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'lgdg' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:5:themeInput" class="flc-prefsEditor-theme-label fl-theme-lgdg" id="themeRow:5:themeLabel" aria-label="Light grey on dark grey"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Light grey on dark grey</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="light-gray" id="themeRow:6:themeInput" value="gw" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'gw' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:6:themeInput" class="flc-prefsEditor-theme-label fl-theme-gw" id="themeRow:6:themeLabel" aria-label="Grey on white"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Grey on white</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="grey on white" id="themeRow:7:themeInput" value="gd" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'gd' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:7:themeInput" class="flc-prefsEditor-theme-label fl-theme-gd" id="themeRow:7:themeLabel" aria-label="Grey on dark"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Grey on dark</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div><div class="flc-prefsEditor-themeRow fl-choice">
+        <input type="radio" class="flc-prefsEditor-themeInput fl-hidden-accessible" name="grey on dark" id="themeRow:8:themeInput" value="bbr" (click)="onInputClicked($event)" [attr.aria-checked]="theme === 'bbr' ? true : false">
+        <div class="fl-indicator"></div>
+        <label for="themeRow:8:themeInput" class="flc-prefsEditor-theme-label fl-theme-bbr" id="themeRow:8:themeLabel" aria-label="Black on brown"><span class="fl-preview-A" aria-hidden="true"></span><span class="fl-hidden-accessible">Black on brown</span><div class="fl-crossout" aria-hidden="true"></div></label>
+    </div>
+</div>

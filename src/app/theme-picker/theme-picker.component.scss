@@ -1,0 +1,145 @@
+.fl-choices {
+    display: flex;
+    justify-content: center;
+}
+
+.fl-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.fl-choice input.fl-hidden-accessible {
+    position: relative;
+    z-index: -2;
+    top: 1rem;
+    left: 1rem;
+}
+
+.flc-prefsEditor-themeInput:focus > label         
+ {
+    outline: 2px solid black;
+}
+
+.fl-choice label {
+    margin-right: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 2.5em;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 2.2em !important;
+    padding: 2px;
+}
+
+label {
+    font-size: 1rem;
+}
+
+.fl-theme-prefsEditor-default {
+    position: relative;
+}
+
+.fl-theme-prefsEditor-default .fl-crossout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5em;
+    border-bottom: 3px dotted #5d5652;
+    transform: rotate(-45deg) translateY(-18px);
+}
+
+.fl-choice label.fl-theme-bw,
+.fl-choice label.fl-theme-bw span,
+.fl-choice label.fl-theme-bw .fl-crossout {
+    background-color: #fff !important;
+    border-color: #000 !important;
+    color: #000 !important;
+}
+
+.fl-choice label.fl-theme-wb,
+.fl-choice label.fl-theme-wb span,
+.fl-choice label.tl-theme-wb .fl-crossout {
+    background-color: #000 !important;
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+.fl-choice label.fl-theme-by,
+.fl-choice label.fl-theme-by span,
+.fl-choice label.tl-theme-by .fl-crossout {
+    background-color: #ff0 !important;
+    border-color: #000 !important;
+    color: #000 !important;
+}
+
+.fl-choice label.fl-theme-yb,
+.fl-choice label.fl-theme-yb span,
+.fl-choice label.tl-theme-yb .fl-crossout {
+    background-color: #000 !important;
+    border-color: #ff0 !important;
+    color: #ff0 !important;
+}
+
+.fl-choice label.fl-theme-lgdg,
+.fl-choice label.fl-theme-lgdg span,
+.fl-choice label.tl-theme-lgdg .fl-crossout {
+    background-color: #555 !important;
+    border-color: #bdbdbb !important;
+    color: #bdbdbb !important;
+}
+
+.fl-choice label.fl-theme-gw,
+.fl-choice label.fl-theme-gw span,
+.fl-choice label.tl-theme-gw .fl-crossout {
+    background-color: #fff !important;
+    border-color: #6c6c6c !important;
+    color: #6c6c6c !important;
+}
+
+.fl-choice label.fl-theme-gd,
+.fl-choice label.fl-theme-gd span,
+.fl-choice label.tl-theme-gd .fl-crossout {
+    background-color: #222 !important;
+    border-color: #888 !important;
+    color: #888 !important;
+}
+
+.fl-choice label.fl-theme-bbr,
+.fl-choice label.fl-theme-bbr span,
+.fl-choice label.tl-theme-bbr .fl-crossout {
+    background-color: #b96 !important;
+    border-color: #000 !important;
+    color: #000 !important;
+}
+
+.fl-choice .fl-preview-A {
+    font-size: 1.7em;
+    letter-spacing: normal;
+}
+
+.fl-choice .fl-preview-A:before {
+    content: "a";
+}
+
+.fl-choice .fl-indicator {
+    margin: -1.5em auto 0 auto;
+    height: 1em;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+.fl-choice input[aria-checked="true"]+ .fl-indicator {
+    border-top: 10px solid #5d5652;
+}

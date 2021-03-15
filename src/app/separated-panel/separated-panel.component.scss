@@ -1,0 +1,104 @@
+:host {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 100%;
+    z-index: 10;
+    margin-left: -8px;
+    color:#5d5652;
+}
+
+.sliding-panel {
+    // height: 200px;
+    background-color: #bcb5ad;
+    transition: height .4s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.panel-bar {
+    width: 100%;
+    background-color: #fff;;
+
+    .prefsEditor-buttons {
+        width: auto;
+        height: auto;
+        box-shadow: 2px 2px 3px 0 #6f6f6f;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: #fff;
+        min-height: 2rem;
+        margin-right: 2rem;
+        display: block;
+        float: right;
+    }
+
+    .prefsEditor-buttons .prefsEditor-reset,
+    .prefsEditor-buttons .prefsEditor-showHide {
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+        height: 2rem;
+        margin-bottom: 0.7rem;
+        font-weight: bold;
+        border: none;
+        padding: 0;
+        text-align: center;
+        text-transform: lowercase;
+        background-color: #fff;
+        border: none;
+        color: #2f2b2a;
+        font-family: 'OpenSans',"Myriad Pro",Helvetica,Arial,sans-serif;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .prefsEditor-buttons .prefsEditor-reset {
+        flex-shrink: 1;
+
+        @media screen and (min-width: 40em) {
+            padding-left: .8rem;
+            margin-right: .5rem;
+        }
+    }
+
+    .prefsEditor-buttons .prefsEditor-showHide {
+        flex-grow: 1;
+        flex-shrink: 2;
+        text-align: left;
+
+        @media screen and (min-width: 40em) {
+            margin: 0 .5rem;
+        }
+    }
+}
+
+.prefEditor-panels {
+    border-spacing: 20px 0;
+    padding: 0;
+    white-space: nowrap;
+    display: table;
+    font-family: 'OpenSans',"Myriad Pro",Helvetica,Arial,sans-serif;
+    line-height: 1.2 !important;
+}
+
+select#text-style-select {
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    border: 2px solid #ebebeb;
+    font-size: 1em;
+    padding: 0.3em;
+
+    &:focus {
+        outline: 2px solid black;
+    }
+}

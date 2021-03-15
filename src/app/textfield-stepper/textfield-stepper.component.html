@@ -1,0 +1,5 @@
+<span class="textfieldStepper-container" tabindex="0" (keydown)="onKeydownHandler($event)">
+    <button class="textfieldStepper-button" role="button" aria-label="Decrease value" (click)="decreaseValue()" tabindex="-1">-</button>
+    <input class="textfieldStepper-input" readonly type="text" [value]="value | number" [attr.aria-valuemin]="min" [attr.aria-valuemax]="max" [attr.aria-valuenow]="value" tabindex="-1" />
+    <button class="textfieldStepper-button" role="button" aria-label="Increase value" (click)="increaseValue()" tabindex="-1">+</button>
+</span>
