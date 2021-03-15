@@ -1,16 +1,7 @@
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { ControlContainer } from '@angular/forms';
-
-enum Contrast {
-  default = 'default',
-  bw = 'bw',
-  wb = 'wb',
-  yb = 'yb',
-  by = 'by',
-  lgdg = 'lgdg',
-  gg = 'gg'
-}
+import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 
 interface Preferences {
   fontSize: number,
@@ -47,8 +38,11 @@ export class SeparatedPanelComponent implements OnInit {
   }
 
   changeContrast(value) {
-    console.log("CONTRAST", value);
-    console.log("THEME ", this.preferences.contrast);
+    var allClasses = document.body.classList;
+    allClasses.forEach(className => {
+      if (className.startsWith("fl-theme-")) { document.body.classList.remove(className); }
+    });
+    document.body.classList.add("fl-theme-" + value);
   }
 
   changeTextStyle(event) {
@@ -66,11 +60,48 @@ export class SeparatedPanelComponent implements OnInit {
   toggleToC(value) {
     console.log("TABLE OF CONTENTS ", value);
     console.log("PREFERENCES TOC", this.preferences.tocEnabled);
+
+    if (value) {
+      const toc = document.createElement("div"),
+            tocUl = document.createElement("ul");
+      
+      toc.setAttribute("id", "toc");
+      tocUl.classList.add("toc-ul");
+
+      const allHeaders = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+      allHeaders.forEach(header => {
+        const hli = document.createElement("li"),
+              headerId = encodeURI(header.textContent.toLowerCase());
+
+        header.setAttribute("name", headerId);
+        hli.classList.add("level-" + header.tagName[1]);
+        hli.innerHTML = 
+          header.tagName + 
+          " - <a href='#" + headerId + "'>" +
+          header.textContent + "</a>";
+
+        if (header.textContent) {
+          tocUl.appendChild(hli);
+        }
+      });
+
+      toc.appendChild(tocUl);
+      document.body.appendChild(toc);
+    } else {
+      const toc = document.getElementById("toc");
+      if (toc) {
+        toc.remove();
+      }
+    }
   }
 
   toggleInputs(value) {
-    console.log("ENHANCE INPUTS", value);
-    console.log("PREFERENCES ENHANCE INPUTS", this.preferences.enhancedInputs);
+    if (value) {
+      document.body.classList.add("fl-input-enhanced");
+    } else {
+      document.body.classList.remove("fl-input-enhanced");
+    }
   }
 
   constructor() {
@@ -90,5 +121,6 @@ export class SeparatedPanelComponent implements OnInit {
     this.changeFontSize(this.preferences.fontSize);
     this.changeLineSpacing(this.preferences.lineSpacing);
     this.changeFontFamily(this.preferences.textStyle);
+    this.toggleToC(this.preferences.tocEnabled);
   }
 }
