@@ -12,6 +12,7 @@
 .sliding-panel {
     // height: 200px;
     background-color: #bcb5ad;
+    border-bottom: 1px solid #ccc;
     transition: height .4s ease;
     overflow: hidden;
     display: flex;

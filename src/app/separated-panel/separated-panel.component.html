@@ -34,7 +34,7 @@
 </div>
 <div class="panel-bar">
     <span class="prefsEditor-buttons">
-        <button id="reset" class="prefsEditor-reset" aria-controls="prefs-sliding-panel" role="button" *ngIf="visible">
+        <button id="reset" class="prefsEditor-reset" aria-controls="prefs-sliding-panel" role="button" *ngIf="visible" (click)="resetPreferences()">
             <span class="icon-undo"></span>Reset
         </button>
         <button 

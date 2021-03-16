@@ -1,1 +1,254 @@
 /* You can add global styles to this file, and also import other style files */
+.fl-font-cs {
+    font-family: 'Comic Sans MS', sans-serif !important;
+}
+
+.fl-font-tnr {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.fl-font-arial { 
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.fl-font-verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.fl-theme-bw, .fl-theme-bw *, .fl-theme-bw div,
+.fl-theme-bw input, .fl-theme-bw h2, .fl-theme-bw h3, .fl-theme-bw h4, .fl-theme-bw h5, .fl-theme-bw h6 {
+    color: #000 !important;
+    background-color: #fff !important;
+    border-top-color: #000 !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #fff !important;
+        border-left-color: #fff !important;
+        border-right-color: #fff !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #000 !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #000 !important;
+    }
+}
+
+.fl-theme-wb, .fl-theme-wb *, .fl-preview-theme.fl-theme-wb, .fl-theme-wb div, .fl-theme-wb input, .fl-theme-wb h1, .fl-theme-wb h2, .fl-theme-wb h3, .fl-theme-wb h4, .fl-theme-wb h5, .fl-theme-wb h6 {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-top-color: #fff !important;
+    border-right-color: #fff !important;
+    border-bottom-color: #fff !important;
+    border-left-color: #fff !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #000 !important;
+        border-left-color: #000 !important;
+        border-right-color: #000 !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #fff !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #fff !important;
+    }
+}
+
+.fl-theme-by, .fl-theme-by *, .fl-preview-theme.fl-theme-by, .fl-theme-by div, .fl-theme-by input, .fl-theme-by h1, .fl-theme-by h2, .fl-theme-by h3, .fl-theme-by h4, .fl-theme-by h5, .fl-theme-by h6 {
+    color: #000 !important;
+    background-color: #ff0 !important;
+    border-top-color: #000 !important;
+    border-right-color: #000 !important;
+    border-bottom-color: #000 !important;
+    border-left-color: #000 !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #ff0 !important;
+        border-left-color: #ff0 !important;
+        border-right-color: #ff0 !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #000 !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #000 !important;
+    }
+}
+
+.fl-theme-yb, .fl-theme-yb *, .fl-preview-theme.fl-theme-yb, .fl-theme-yb div, .fl-theme-yb input, .fl-theme-yb h1, .fl-theme-yb h2, .fl-theme-yb h3, .fl-theme-yb h4, .fl-theme-yb h5, .fl-theme-yb h6 {
+    color: #ff0 !important;
+    background-color: #000 !important;
+    border-top-color: #ff0 !important;
+    border-right-color: #ff0 !important;
+    border-bottom-color: #ff0 !important;
+    border-left-color: #ff0 !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #000 !important;
+        border-left-color: #000 !important;
+        border-right-color: #000 !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #ff0 !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #ff0 !important;
+    }
+}
+
+.fl-theme-lgdg, .fl-theme-lgdg *, .fl-preview-theme.fl-theme-lgdg, .fl-theme-lgdg div, .fl-theme-lgdg input, .fl-theme-lgdg h1, .fl-theme-lgdg h2, .fl-theme-lgdg h3, .fl-theme-lgdg h4, .fl-theme-lgdg h5, .fl-theme-lgdg h6 {
+    color: #bdbdbb !important;
+    background-color: #555 !important;
+    border-top-color: #bdbdbb !important;
+    border-right-color: #bdbdbb !important;
+    border-bottom-color: #bdbdbb !important;
+    border-left-color: #bdbdbb !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #555 !important;
+        border-left-color: #555 !important;
+        border-right-color: #555 !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #bdbdbb !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #bdbdbb !important;
+    }
+}
+
+.fl-theme-gw, .fl-theme-gw *, .fl-preview-theme.fl-theme-gw, .fl-theme-gw div, .fl-theme-gw input, .fl-theme-gw h1, .fl-theme-gw h2, .fl-theme-gw h3, .fl-theme-gw h4, .fl-theme-gw h5, .fl-theme-gw h6 {
+    color: #6c6c6c !important;
+    background-color: #fff !important;
+    border-top-color: #6c6c6c !important;
+    border-right-color: #6c6c6c !important;
+    border-bottom-color: #6c6c6c !important;
+    border-left-color: #6c6c6c !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #fff !important;
+        border-left-color: #fff !important;
+        border-right-color: #fff !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #6c6c6c !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #6c6c6c !important;
+    }
+
+    a, a * {
+        color: #66c !important;
+        font-weight: bold !important;
+        background-color: #fff !important;
+    }
+}
+
+.fl-theme-gd, .fl-theme-gd *, .fl-preview-theme.fl-theme-gd, .fl-theme-gd div, .fl-theme-gd input, .fl-theme-gd h1, .fl-theme-gd h2, .fl-theme-gd h3, .fl-theme-gd h4, .fl-theme-gd h5, .fl-theme-gd h6 {
+    color: #888 !important;
+    background-color: #222 !important;
+    border-top-color: #888 !important;
+    border-right-color: #888 !important;
+    border-bottom-color: #888 !important;
+    border-left-color: #888 !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #222 !important;
+        border-left-color: #222 !important;
+        border-right-color: #222 !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #888 !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #888 !important;
+    }
+
+    a, a * {
+        color: #8080ff !important;
+        font-weight: bold !important;
+        background-color: #222 !important;
+    }
+}
+
+.fl-theme-bbr, .fl-theme-bbr *, .fl-preview-theme.fl-theme-bbr, .fl-theme-bbr div, .fl-theme-bbr input, .fl-theme-bbr h1, .fl-theme-bbr h2, .fl-theme-bbr h3, .fl-theme-bbr h4, .fl-theme-bbr h5, .fl-theme-bbr h6 {
+    color: #000 !important;
+    background-color: #b96 !important;
+    border-top-color: #000 !important;
+    border-right-color: #000 !important;
+    border-bottom-color: #000 !important;
+    border-left-color: #000 !important;
+
+    .fl-theme-prefsEditor-default .fl-crossout {
+        background-color: transparent !important;
+    }
+
+    .fl-indicator {
+        border-top-color: #b96 !important;
+        border-left-color: #b96 !important;
+        border-right-color: #b96 !important;
+    }    
+
+    .fl-choice input[aria-checked=true] + .fl-indicator {
+        border-top-color: #000 !important;
+    }
+
+    .switchUI-controlKnob {
+        background-color: #000 !important;
+    }
+
+    a, a * {
+        color: #009 !important;
+        font-weight: bold !important;
+        background-color: #b96 !important;
+    }
+}
+
+.fl-input-enhanced a {
+    font-size: 125% !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}

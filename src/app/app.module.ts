@@ -7,6 +7,7 @@ import { PrefsEditorPanelComponent } from './prefs-editor-panel/prefs-editor-pan
 import { TextfieldStepperComponent } from './textfield-stepper/textfield-stepper.component';
 import { SwitchComponent } from './switch/switch.component';
 import { ThemePickerComponent } from './theme-picker/theme-picker.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ThemePickerComponent } from './theme-picker/theme-picker.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ CookieService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
