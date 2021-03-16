@@ -94,9 +94,11 @@ export class SeparatedPanelComponent implements OnInit {
           tocUl = document.createElement("ul");
       
     toc.setAttribute("id", "toc");
+    const tocTitle = document.createElement('h2');
+    tocTitle.innerText = 'Table of contents';
     tocUl.classList.add("toc-ul");
 
-    const allHeaders = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    const allHeaders = document.body.querySelectorAll("h1, h2, h3, h4, h5, h6");
 
     allHeaders.forEach(header => {
       const hli = document.createElement("li"),
@@ -105,8 +107,9 @@ export class SeparatedPanelComponent implements OnInit {
       header.setAttribute("name", headerId);
       hli.classList.add("level-" + header.tagName[1]);
       hli.innerHTML = 
+        "<span class='header-tag' aria-label=`header level ${header.tagName[1]}`>" +
         header.tagName + 
-        " - <a href='#" + headerId + "'>" +
+        "</span> <a href='#" + headerId + "'>" +
         header.textContent + "</a>";
 
       if (header.textContent) {
@@ -114,8 +117,9 @@ export class SeparatedPanelComponent implements OnInit {
       }
     });
 
+    toc.appendChild(tocTitle);
     toc.appendChild(tocUl);
-    document.body.appendChild(toc);
+    document.body.prepend(toc);
   }
 
   removeToc() {
@@ -135,8 +139,10 @@ export class SeparatedPanelComponent implements OnInit {
 
   resetPreferences() {
     this.preferences = defaultPreferences;
+    var allClasses = document.body.classList;
     this.setAllPreferences();
     this.cookieService.set('flc-preferences', JSON.stringify(this.preferences));
+    window.location.reload();
   }
 
   setAllPreferences() {
@@ -151,6 +157,8 @@ export class SeparatedPanelComponent implements OnInit {
     /* Toggle table of contents */
     if (this.preferences.tocEnabled) {
       this.createToc();
+    } else {
+      this.removeToc();
     }
     /* Enhance inputs */
     if (this.preferences.enhancedInputs) {

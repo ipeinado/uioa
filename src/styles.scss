@@ -1,17 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-.fl-font-cs {
+.fl-font-cs, .fl-font-cs * {
     font-family: 'Comic Sans MS', sans-serif !important;
 }
 
-.fl-font-tnr {
+.fl-font-tnr, .fl-font-tnr * {
     font-family: 'Times New Roman', Times, serif !important;
 }
 
-.fl-font-arial { 
+.fl-font-arial, .fl-font-arial * { 
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-.fl-font-verdana {
+.fl-font-verdana, .fl-font-verdana * {
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
@@ -251,4 +251,25 @@
     font-size: 125% !important;
     text-decoration: underline !important;
     font-weight: bold !important;
+}
+
+ul.toc-ul {
+    list-style-type: none;
+
+    li > .header-tag {
+        font-size: .9rem;
+        background-color: #009 !important;
+        color: #fff !important;
+        padding: 0.3em;
+        border-radius: 50%;
+    }
+
+    li.level-2 {
+        padding-left: 1em;
+    }
+
+    li.level-3 {
+        padding-left: 2em;
+    }
+
 }
